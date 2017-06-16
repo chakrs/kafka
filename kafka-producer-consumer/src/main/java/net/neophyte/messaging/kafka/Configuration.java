@@ -16,7 +16,6 @@ public abstract class Configuration {
 		+ "kafka-cluster1-node2.domain.com:9093";
 	
 	public static final int IGNORE = -1;
-	private static final String brokerUrl = "tcp://localhost:32780";
 	private static final String topicName = "test_topic";
 	private static final String truststoreLocation = "/Users/user1/cert/kafka.client.truststore.jks";
 	private static final String keystoreLocation = "/Users/user1/cert/kafka.client.keystore.jks";
@@ -35,10 +34,6 @@ public abstract class Configuration {
 	private final static short addDelayTime = 0;// mili seconds
 	private final static short maxDelayTime = 10 * 1000;// mili seconds
 	private final static long pollTimeout = 10000;
-	
-	public static String getBrokerurl() {
-		return brokerUrl;
-	}
 
 	public static String getTopicName() {
 		return topicName;
